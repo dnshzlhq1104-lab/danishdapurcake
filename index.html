@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danish Dapur Cake</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8cc;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #6d4c41;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 70vh;
+      background: linear-gradient(to bottom, #fff8cc, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .location {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff7a00;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #e66900;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    /* CARD UPDATE */
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 14px;
+    }
+
+    .card p {
+      color: #777;
+    }
+
+    .card button {
+      background-color: #fbc02d;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-06%20134109.png">
+    <nav>
+      <a href="#">home</a>
+      <a href="#produk">Produk</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>DANISH DAPUR CAKE</h2>
+      <p class="tagline">One Bite is Never Enough</p>
+      <p class="location">Cabang Malang dan Sidoarjo</p>
+      <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+  </section>
+
+  <section class="products" id="produk">
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/Downloads/Screenshot%202026-04-06%20134829.jpg">
+      <h3>Danish Fudgy Brownies 20x10 Panggang Nyoklat Banget by danishdapurcake</h3>
+      <p>Rp57.850</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Fudgy-Brownies-70-Coklat-Topping-Nyoklat-i.833564468.17281338884?extraParams=%7B%22display_model_id%22%3A136452349578%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-06%20135934.png">
+      <h3>Danish Premium Lekker Holland / Boterkoek 20x10 Panggang Wangi Butter Nanas by danishdapurcake</h3>
+      <p>Rp50.997</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Premium-Lekker-Holland-Boterkoek-20x10-Panggang-Wangi-Butter-Nanas-by-danishdapurcake-i.833564468.25814240283?extraParams=%7B%22display_model_id%22%3A255351127612%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-06%20135308.png">
+      <h3>Danish Mix Brownies Lekker 20x10 (18 potong) Panggang Cemilan Oleh-Oleh by danishdapurcake</h3>
+      <p>Rp45.309</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Mix-Brownies-Lekker-18-Potong-Halal-i.833564468.18279573802?extraParams=%7B%22display_model_id%22%3A39306735169%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-06%20135430.png">
+      <h3>Danish Lekker Holland / Boterkoek 20x10 Panggang Wangi Butter Leker Holland by danishdapurcake</h3>
+      <p>Rp33.108</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Lekker-Holland-Butter-Cake-20x10-Halal-i.833564468.16981341785?extraParams=%7B%22display_model_id%22%3A88099014087%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-06%20135636.png">
+      <h3>Danish Lekker Holland Coklat / Boterkoek 20x10 Panggang Wangi Butter Rasa Coklat by danishdapurcake</h3>
+      <p>Rp45.479</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Lekker-Holland-Coklat-Butter-Nagih-20x10-i.833564468.24864236149?extraParams=%7B%22display_model_id%22%3A166342559662%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+     <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20083940.png">
+      <h3>Danish Premium Lekker Holland / Boterkoek 20x10 Panggang Wangi Butter Strawberry by danishdapurcake</h3>
+      <p>Rp47.899</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Premium-Lekker-Holland-Boterkoek-20x10-Panggang-Wangi-Butter-Strawberry-by-danishdapurcake-i.833564468.24226966705?extraParams=%7B%22display_model_id%22%3A127907003352%2C%22model_selection_logic%22%3A2%7D&sp_atk=fbf7feb2-1d79-490d-a00b-3bea99bb540a&xptdk=fbf7feb2-1d79-490d-a00b-3bea99bb540a')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20084236.png">
+      <h3>Danish Lekker Holland Pandan / Boterkoek 20x10 Panggang Wangi Butter-Pandan by danishdapurcake</h3>
+      <p>Rp34.942</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Lekker-Holland-Pandan-Butter-Cake-20x10-i.833564468.25264325233?extraParams=%7B%22display_model_id%22%3A168071777767%2C%22model_selection_logic%22%3A2%7D&sp_atk=d027018a-269c-4464-8270-83f53843460d&xptdk=d027018a-269c-4464-8270-83f53843460d')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20084909.png">
+      <h3>Danish Cake Keju 20x10 (18 potong) Panggang Cemilan Oleh-Oleh by danishdapurcake</h3>
+      <p>Rp45.479</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Cake-Keju-18-Potong-Halal-Oleh-Oleh-i.833564468.22361520294?extraParams=%7B%22display_model_id%22%3A255047110246%2C%22model_selection_logic%22%3A2%7D&sp_atk=23614a7c-6659-4f5d-b3ae-bb5b8216b22b&xptdk=23614a7c-6659-4f5d-b3ae-bb5b8216b22b')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20085259.png">
+      <h3>Danish Mini Fudgy Brownies Panggang 10x10cm (9 potong) Nyoklat banget by danishdapurcake</h3>
+      <p>Rp28.248</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Mini-Fudgy-Brownies-70-Coklat-Nyoklat-i.833564468.21279556276?extraParams=%7B%22display_model_id%22%3A98703880315%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20085502.png">
+      <h3>Danish Mini Lekker Holland / Boterkoek 10x10cm(9 potong) Wangi Butter Bikin Nagih by danishdapurcake</h3>
+      <p>Rp19.313</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Mini-Lekker-Holland-Butter-Nagih-9-Potong-i.833564468.18288514277?extraParams=%7B%22display_model_id%22%3A79655785721%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20085744.png">
+      <h3>Danish Mini Premium Lekker Holland / Boterkoek Nanas 10x10 (9 Potong) Panggang Wangi Butter Nanas by danishdapurcake</h3>
+      <p>Rp27.590</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Mini-Premium-Lekker-Holland-Butter-Nanas-i.833564468.27689050499?extraParams=%7B%22display_model_id%22%3A270828765348%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="file:///C:/Users/dnshz/OneDrive/Pictures/Screenshots/Screenshot%202026-04-07%20090016.png">
+      <h3>Danish Mini Lekker Holland Keju/Boterkoek 10x10 (9 ptg) Panggang Wangi Butter Rasa Keju by danishdapurcake</h3>
+      <p>Rp24.831</p>
+      <button onclick="beliProduk('https://shopee.co.id/Danish-Mini-Lekker-Holland-Keju-Butter-Nagih-i.833564468.26839039661?extraParams=%7B%22display_model_id%22%3A260829170838%2C%22model_selection_logic%22%3A3%7D')">Beli</button>
+    </div>
+
+
+  </section>
+
+  <footer id="kontak">
+    <div class="card">
+      <button onclick="kontakKami()">kontak📞</button>
+      <button onclick="instagramKami()">instagram📷</button>
+    </div>
+
+    <p>&copy; 2020 DanishDapurCake</p>
+  </footer>
+
+  <script>
+    function beliProduk(link) {
+      window.open(link, '_blank');
+    }
+
+    function kontakKami() {
+      window.open('https://api.whatsapp.com/send/?phone=6282335331333&text&type=phone_number&app_absent=0&utm_source=ig', '_blank');
+    }
+
+    function instagramKami() {
+      window.open('https://www.instagram.com/danishdapurcake/', '_blank');
+    }
+  </script>
+
+</body>
+</html>
